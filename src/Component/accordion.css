@@ -1,0 +1,35 @@
+.accordion {
+  width: 250px;
+}
+
+.items{
+  background-color: aliceblue;
+  margin-top: 5px;
+  padding-top: 10px 20px;
+}
+.wrapper{
+  display: flex;
+  height: 120vh;
+  width: 120vh;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor:pointer;
+}
+.content.show{
+  height: auto;
+  max-height: 9999px;
+  transition-duration: 0.5s;
+}
+.content{
+  color:aliceblue;
+  max-height: 0;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+

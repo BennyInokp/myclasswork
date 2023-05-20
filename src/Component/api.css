@@ -1,0 +1,40 @@
+.center{
+    text-align: center;
+    text-decoration:none;
+    margin-top: 5rem;
+
+  }
+  #in{
+    border-radius: 5px;
+    border-color:none;
+    width: 25vw;
+    height: 7vh; 
+    border:none;
+  }
+  h1{
+    color: green;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  button{
+    width:25vw;
+    height:7vh;
+    border-radius:5px;
+    margin-left:30px;
+    background-color: green;
+    color:white;
+    font-weight:bold;
+    font-size: 25px;
+    border-color:none;
+    border:none;
+  }
+  li{
+    list-style-type:none;
+  }
+  .border{
+  align-items:center;
+  }
+  img{
+    width: 80px;
+    height:80px;
+  }
