@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import './Quote.css';
+
 
 
 function getRandomQuote(quotes) {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
- export default function Quote() {
+ export default function Quotes() {
     const [quotes, setQuotes] = useState([]);
     const [quote, setQuote] = useState(null);
     const [count, setCount] = useState(0);
@@ -17,12 +17,12 @@ function getRandomQuote(quotes) {
         .then((res) => res.json())
         .then((json) =>{
             setQuotes(json);
-            //setQuote(json[0]);
+             //setQuote(json[0]);
         });
-        const interval = setInterval (()=>{
-            getNewQuote();
+        const interval = setInterval (() => {
+             getNewQuote();
             setCount (count + 1);
-        }, 1000);
+        }, 5000);
         return () => clearInterval(interval);
     }, [count]);
 
@@ -33,7 +33,7 @@ function getRandomQuote(quotes) {
     }
   return (
     <main className="quote">
-        <h1>Project 2: Quote Generator</h1>
+        <h1> Quote Generator</h1>
         <selecton>
             <button onClick={getNewQuote}>New Quote</button>
             <h3>

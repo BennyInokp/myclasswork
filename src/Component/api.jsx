@@ -1,5 +1,5 @@
 import {useState} from "react";
-import './api.css';
+
 
 export default function Api() {
   const [input, setInput] = useState("");
@@ -19,14 +19,14 @@ const submitHandler =  (e) => {
       //setResult(input);
 
 
-    });
+   });
 
 };
   return (
        <div className="center">
         <h1> GitHub User Search</h1>
         <form onSubmit={submitHandler}>
-          <input type="text"id="in" placeholder="Enter Your Github Account Here" onChange={onChangeHandler} />
+          <input type="text"id="form" placeholder="Enter Your Github Account Here" onChange={onChangeHandler} /> 
           <button type="">Search</button>
         </form>
         <ul>
@@ -47,6 +47,7 @@ const submitHandler =  (e) => {
             ))
           )}
           </ul>
+
        </div>
   );
 }  

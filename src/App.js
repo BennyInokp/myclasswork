@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Accordion from "../Component/accordion";
-import "./accordion.css";
+import Accordion from "./Component/accordion";
+import "./Component/accordion.css";
 import Api from "./Component/api";
-import "./api.css";
-import Quotes from "../component/quotes";
-import "./quotes.css";
+import "./Component/api.css";
+import Quotes from "./Component/quotes";
+import "./Component/quotes.css";
 import Carousel from "./Component/carousel";
-import "./carousel.css";
+import "./Component/carousel.css";
 
 function App() {
   return (

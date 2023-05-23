@@ -1,35 +1,33 @@
-.accordion {
-  width: 250px;
-}
-
-.items{
-  background-color: aliceblue;
-  margin-top: 5px;
-  padding-top: 10px 20px;
-}
 .wrapper{
   display: flex;
-  height: 120vh;
-  width: 120vh;
+  height: 80vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
 }
+.accordion{
+  width: 400px;
+}
+.item{
+  background: grey;
+  margin-top: 5px;
+  padding: 10px 20px;
+}
 .title{
-  color:white;
-  display:flex;
+  color: whitesmoke;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor:pointer;
+  cursor: pointer;
+}
+.content{
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s cubic-bezier(0,1,0,1);
 }
 .content.show{
   height: auto;
-  max-height: 9999px;
-  transition-duration: 0.5s;
+  max-height: 1000px;
+  transition: 0.5s cubic-bezier(0,1,0,1);
 }
-.content{
-  color:aliceblue;
-  max-height: 0;
-  overflow: hidden;
-  transition-duration: 0.5s;
-}
-

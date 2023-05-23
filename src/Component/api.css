@@ -1,26 +1,28 @@
 .center{
     text-align: center;
     text-decoration:none;
-    margin-top: 5rem;
+    margin-top: 4rem;
 
   }
-  #in{
+  #form{
     border-radius: 5px;
     border-color:none;
-    width: 25vw;
-    height: 7vh; 
+    width: 20vw;
+    height: 8vh; 
     border:none;
   }
   h1{
-    color: green;
     font-weight: bold;
     font-size: 60px;
+    color: gray;
   }
   button{
+    
     width:25vw;
-    height:7vh;
+    height:6vh;
     border-radius:5px;
-    margin-left:30px;
+    margin-left:35px;
+    margin-top: 1.5px;
     background-color: green;
     color:white;
     font-weight:bold;
@@ -35,6 +37,10 @@
   align-items:center;
   }
   img{
-    width: 80px;
-    height:80px;
+    width: 100px;
+    height:120px;
+    margin-top: 2px;
+  }
+  body{
+    background-color: whitesmoke;
   }
